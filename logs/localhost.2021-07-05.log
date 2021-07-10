@@ -1,0 +1,69 @@
+05-Jul-2021 09:26:20.479 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+05-Jul-2021 09:26:20.479 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+05-Jul-2021 09:26:20.480 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@78cc4c19')
+05-Jul-2021 09:50:29.670 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+05-Jul-2021 09:50:29.670 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+05-Jul-2021 09:50:36.552 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+05-Jul-2021 09:50:36.552 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+05-Jul-2021 09:50:36.553 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@2aefbc35')
+05-Jul-2021 09:51:05.780 SEVERE [http-nio-8081-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [default] in context with path [] threw exception
+	java.lang.IndexOutOfBoundsException: No group 1
+		at java.util.regex.Matcher.start(Matcher.java:375)
+		at java.util.regex.Matcher.appendReplacement(Matcher.java:880)
+		at java.util.regex.Matcher.replaceAll(Matcher.java:955)
+		at org.tuckey.web.filters.urlrewrite.utils.RegexMatcher.replaceAll(RegexMatcher.java:72)
+		at org.tuckey.web.filters.urlrewrite.RuleBase.matchesBase(RuleBase.java:244)
+		at org.tuckey.web.filters.urlrewrite.NormalRule.matches(NormalRule.java:91)
+		at org.tuckey.web.filters.urlrewrite.RuleChain.doRuleProcessing(RuleChain.java:83)
+		at org.tuckey.web.filters.urlrewrite.RuleChain.process(RuleChain.java:137)
+		at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:144)
+		at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92)
+		at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:381)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:194)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:167)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:544)
+		at org.apache.catalina.valves.rewrite.RewriteValve.invoke(RewriteValve.java:305)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:364)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:624)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:831)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1651)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+05-Jul-2021 10:02:51.183 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+05-Jul-2021 10:02:51.183 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+05-Jul-2021 10:02:55.005 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+05-Jul-2021 10:02:55.005 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+05-Jul-2021 10:02:55.006 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@78cc4c19')
+05-Jul-2021 10:19:54.140 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+05-Jul-2021 10:19:54.140 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+05-Jul-2021 10:19:56.990 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log org.tuckey.web.filters.urlrewrite.NormalRule ERROR: Rule Rule 0 had error: from (/nsl/services/**) is an invalid expression - java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 15
+/nsl/services/**
+               ^
+05-Jul-2021 10:19:56.990 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log org.tuckey.web.filters.urlrewrite.RuleBase ERROR: from (/nsl/services/**) is an invalid expression - java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 15
+/nsl/services/**
+               ^
+05-Jul-2021 10:19:56.993 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log org.tuckey.web.filters.urlrewrite.NormalRule ERROR: Rule Rule 1 had error: from (/nsl/editor/**) is an invalid expression - java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 13
+/nsl/editor/**
+             ^
+05-Jul-2021 10:19:56.993 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log org.tuckey.web.filters.urlrewrite.RuleBase ERROR: from (/nsl/editor/**) is an invalid expression - java.util.regex.PatternSyntaxException: Dangling meta character '*' near index 13
+/nsl/editor/**
+             ^
+05-Jul-2021 10:19:56.994 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log org.tuckey.web.filters.urlrewrite.UrlRewriteFilter ERROR: Conf failed to load
+05-Jul-2021 10:19:57.214 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+05-Jul-2021 10:19:57.214 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+05-Jul-2021 10:19:57.216 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@3ea32c0b')
+05-Jul-2021 11:16:26.789 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+05-Jul-2021 11:16:26.789 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+05-Jul-2021 11:16:29.466 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+05-Jul-2021 11:16:29.466 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+05-Jul-2021 11:16:29.468 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@2aefbc35')

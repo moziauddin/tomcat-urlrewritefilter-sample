@@ -1,0 +1,14 @@
+<urlrewrite>
+    <rule>
+	    <from>^/app/(.*)$</from>
+	    <to type="redirect">%{context-path}/mo/it/$1</to>
+    </rule>
+    <rule>
+	    <from>^/app</from>
+	    <to type="redirect">%{context-path}/mo/it/index.html</to>
+    </rule>
+    <rule>
+	    <from>/web</from>
+	    <to type="redirect">%{context-path}/mo/it/services/web/design</to>
+    </rule>
+</urlrewrite>
